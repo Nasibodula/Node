@@ -9,7 +9,6 @@ const app = express();
 // connect to mongodb & listen for requests
 const dbURI = "mongodb+srv://NDC:wogesake@cluster0.6sdxs5n.mongodb.net/Ninja-tuts?retryWrites=true&w=majority&appName=Cluster0";
 
-
 mongoose.connect(dbURI)
   .then(result => app.listen(3000))
   .catch(err => console.log(err));
